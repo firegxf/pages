@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Ceevee - Free Responsive HTML5/CSS3 Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
+   <link rel="stylesheet" href="css/index.css">
+</head>
+<style>
+   .box{
+      width: 100%;
+      height: 629px;
+      border: 1px solid #ccc;
+      margin:0 auto;
+      /*overflow: hidden;*/
+   }
+   .out{
+      width: 6400px;
+      height: 100%;
+      animation:wheel 15s linear infinite;
+   }
+   .out .inner{
+      width: 800px;
+      height: 100%;
+      box-sizing:border-box;
+      border: 1px solid #ccc;
+      float: left;
+      text-align: center;
+      line-height: 800px;
+      font-size: 150px;
+   }
+  /* .out:hover{
+      animation-play-state:paused;
+   }*/
+   @keyframes wheel{
+      100%{
+         transform:translateX(-3200px);
+      }
+   }
+
+   /*==================================*/
+   .outs{
+      width: 1200px;
+      height: 500px;
+      border:1px solid red;
+      margin: 0 auto;
+      perspective:1200px;
+      perspective-origin:center top;
+   }
+   .inners{
+      width: 300px;
+      height: 300px;
+      margin: 100px 450px;
+      position: relative;
+      transition:all 2s;
+      transform-style:preserve-3d;
+   }
+   .inners .boxs{
+      width: 300px;
+      height: 300px;
+      position: absolute;
+   }
+   .inners .boxs:first-child{
+      background: red;
+   }
+   .inners .boxs:nth-child(2){
+      background: blue;
+   }
+   .inners .boxs:nth-child(3){
+      background: green;
+   }
+   .inners .boxs:nth-child(4){
+      background: plum;
+   }
+   .inners .boxs:nth-child(5){
+      background: black;
+   }
+   .inners .boxs:last-child{
+      background: pink;
+   }
+</style>
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <header id="home">
+
+      <nav id="nav-wrap">
+
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">首页</a></li>
+            <li><a class="smoothscroll" href="#about">个人简介</a></li>
+	         <li><a class="smoothscroll" href="#resume">知识技能</a></li>
+            <li><a class="smoothscroll" href="#portfolio">作品展示</a></li>
+            <li><a class="smoothscroll" href="#testimonials">我看前端</a></li>
+            <li><a class="smoothscroll" href="#contact">联系方式</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 class="responsive-headline">My PersonalPage.</h1>
+            <h3><span>热衷于新技术的学习和探讨，热衷页面布局。崇尚化繁为简理念
+对互联网发展趋势高兴趣关注，积极配合开发同事完成工作少即是多 化繁为简 做到极致 作品背后便是专注
+</span><!-- , <span></span>  <span>webdesigner</span> creating awesome and
+            effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
+            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+            <hr /> -->
+            <ul class="social">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="three columns">
+
+            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
+
+         </div>
+
+         <div class="nine columns main-col">
+
+            <h2>About Me</h2>
+
+            <p>性格活泼,积极向上,对生活和工作充满热情,因为对于编程的兴趣选择了与程序相关的专业并在毕业后从事编程工作.在校期间担任学生会副主席,曾带领80人的团队连续参与两届校园招聘会的组织工作,有较强的组织能力和工作能力.2015年12月在山西太原白领公社担任前端工程师,主要负责前端页面的编写和JS效果的添加。
+            </p>
+
+            <div class="row">
+
+               <div class="columns contact-details">
+
+                  <h2>Contact Details</h2>
+                  <p class="address">
+						   <span>姓名：郭晓峰</span><br>
+						   <span>毕业院校：山西大学商务学院（本科）　专业：电子商务
+
+                     </span><br>
+						   <span>电话：18335104944</span><br>
+                     <span>邮箱：18335104944@163.com</span>
+					   </p>
+
+               </div>
+
+               <div class="columns download">
+                  <p>
+                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+                  </p>
+               </div>
+
+            </div> <!-- end row -->
+
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Resume Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <!-- <div class="row education">
+      
+         <div class="three columns header-col">
+            <h1><span>Education</span></h1>
+         </div>
+      
+         <div class="nine columns main-col">
+      
+            <div class="row item">
+      
+               <div class="twelve columns">
+      
+                  <h3>University of Life</h3>
+                  <p class="info">Master in Graphic Design <span>&bull;</span> <em class="date">April 2007</em></p>
+      
+                  <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
+                  </p>
+      
+               </div>
+      
+            </div> item end
+      
+            <div class="row item">
+      
+               <div class="twelve columns">
+      
+                  <h3>School of Cool Designers</h3>
+                  <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003</em></p>
+      
+                  <p>
+                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
+                  </p>
+      
+               </div>
+      
+            </div> item end
+      
+         </div> main-col end
+      
+      </div> End Education -->
+<div class="box">
+      <div class="out">
+      <a href=""><div class="inner"><img src="images/未标题-1.jpg" alt=""></div></a>
+      <a href=""><div class="inner"><img src="images/未标题-7.jpg" alt=""></div></a>
+      <a href=""><div class="inner"><img src="images/未标题-3.jpg" alt=""></div></a>
+      <a href=""><div class="inner"><img src="images/未标题-8.jpg" alt=""></div></a>
+
+      <a href=""><div class="inner"><img src="images/未标题-1.jpg" alt=""></div></a>
+      <a href=""><div class="inner"><img src="images/未标题-7.jpg" alt=""></div></a>
+      <a href=""><div class="inner"><img src="images/未标题-3.jpg" alt=""></div></a>
+      <a href=""><div class="inner"><img src="images/未标题-8.jpg" alt=""></div></a>
+
+   </div>
+   </div>
+
+      <!-- Work
+      ----------------------------------------------- -->
+      <div class="kong" style="width:100%;height:30px"></div>
+      <div class="row work">
+
+         <div class="three columns header-col">
+            <h1><span>上线项目</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h2>北京同仁堂科技发展股份有限公司</h2>
+                  <p class="info">公司网站<span>&bull;</span> <em class="date"><a href="http://www.tongrentangkj.com" target="_blank">www.tongrentangkj.com</a></em></p>
+
+                  <p>
+                 该网站是北京同仁堂旗下的一个网站，项目周期为三周，我主要负责前端页面的编写和JS效果的添加，以及参与了后台的部分工作。在与后台进行连接的时候主要运用了phpcmsV9系统，通过编写模版实现前台和后台的交互。
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+            <div class="row item">
+
+               <div class="twelve columns">
+
+                  <h2>伊莎美尔官方网站</h2>
+                  <p class="info">公司网站 <span>&bull;</span> <em class="date"><a href="http://www.isamell.com" target="_blank">www.isamell.com</a></em></p>
+
+                  <p>
+                该网站是一个主营化妆品的电商类型的网站，项目周期为三周，我主要负责利用DIV+CSS快速进行页面布局，同时利用Jquery进行JS效果的实现，登录界面利用AJAX实现后台数据验证。同时参与了部分的后台工作，在与后台进行连接的时候主要运用了phpcmsV9系统，通过编写模版实现前台和后台的交互。
+                  </p>
+
+               </div>
+
+            </div> <!-- item end -->
+
+         </div> <!-- main-col end -->
+
+      </div> <!-- End Work -->
+
+
+      <!-- Skills
+      ----------------------------------------------- -->
+      <div class="row skill">
+
+         <div class="three columns header-col">
+            <h1><span>Skills</span></h1>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <p>1.HTML/CSS<br>
+                  精通HTML/CSS布局,可以对前端页面快速进行布局. <br>
+               2.js/jQuery<br>
+                  熟练使用javascript进行页面效果的制作及优化,熟练使用jQuery进行工作.<br>
+               3.Ajax<br>
+                  能够熟练运用Ajax对前台和后台迅速进行交互.<br>
+               4.HTML5/CSS3<br>
+                  精通HTML5/CSS3,可以熟练运用进行移动端的搭建以及响应式的设计.<br>
+               5.AngularJS<br>
+                  能够熟练AngularJS，运用AngularJS结合本地存储写过记事本等应用.<br>
+               6.Photoshop<br>
+                  熟练掌握Photoshop的使用技巧，能够利用ps进行基本的平面界面设计.<br>
+            </p>
+
+				<div class="bars">
+
+				   <ul class="skills">
+					   <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
+                  <li><span class="bar-expand illustrator"></span><em>Angular JS</em></li>
+						<li><span class="bar-expand wordpress"></span><em>CSS3</em></li>
+						<li><span class="bar-expand css"></span><em>CSS+DIV</em></li>
+						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
+                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
+					</ul>
+
+				</div><!-- end skill-bars -->
+
+			</div> <!-- main-col end -->
+
+      </div> <!-- End skills -->
+
+   </section> <!-- Resume Section End-->
+
+	<div class="copyrights">Collect from <a href=""  title="网站模板">个人网站</a></div>
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <h1>Check Out Some of My Works.</h1>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-01" title="">
+                        <img alt="" src="images/portfolio/未标题-1.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>京东首页</h5>
+                              <p>Illustrration</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-02" title="">
+                        <img alt="" src="images/portfolio/未标题-2.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>银泰</h5>
+                              <p>Web Development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-03" title="">
+                        <img alt="" src="images/portfolio/未标题-3.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>天猫</h5>
+                              <p>Webdesign</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-04" title="">
+                        <img alt="" src="images/portfolio/未标题-4.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>网易邮箱6.0</h5>
+                              <p>Photography</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-05" title="">
+                        <img alt="" src="images/portfolio/未标题-6.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>备忘录</h5>
+                              <p>Branding</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-06" title="">
+                        <img alt="" src="images/portfolio/未标题-7.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>苹果PC端响应式</h5>
+                              <p>Photography</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-07" title="">
+                        <img alt="" src="images/portfolio/未标题-5.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>canvas画板</h5>
+                              <p>Illustrration</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div> <!-- item end -->
+
+               <div class="columns portfolio-item">
+                  <div class="item-wrap">
+
+                     <a href="#modal-08" title="">
+                        <img alt="" src="images/portfolio/未标题-8.jpg">
+                        <div class="overlay">
+                           <div class="portfolio-item-meta">
+          					      <h5>Angular JS画板</h5>
+                              <p>Web Development</p>
+          					   </div>
+                        </div>
+                        <div class="link-icon"><i class="icon-plus"></i></div>
+                     </a>
+
+                  </div>
+          		</div>  <!-- item end -->
+
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+
+         <!-- Modal Popup
+	      --------------------------------------------------------------- -->
+
+			   <a href="https://firegxf.github.io/JD/" target="_blank">
+         <div id="modal-01" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>京东PC端首页</h4>
+			      <p>临摹京东PC端首页，利用div+css进行布局以及利用jquery对页面的JS效果进行添加.</p></a>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+		      </div>
+
+            <div class="link-box">
+              Details
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+         </a>
+
+
+      <a href="https://firegxf.github.io/YT/" target="_blank">
+    <div id="modal-02" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/modals/YT.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>银泰PC端首页</h4>
+               <p>临摹银泰PC端首页，利用div+css进行布局以及利用jquery对页面的JS效果进行添加..</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
+            </div>
+
+            <div class="link-box">
+               Details
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div><!-- modal-02 End -->
+         </a>
+
+
+
+        
+ <a href="https://firegxf.github.io/TM/" target="_blank">
+         <div id="modal-03" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/TM.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>天猫PC端首页</h4>
+			      <p>临摹天猫PC端首页，利用div+css进行布局以及利用jquery对页面的JS效果进行添加..</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
+		      </div>
+
+            <div class="link-box">
+               Details
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-03 End -->
+         </a>
+
+
+         <a href="https://firegxf.github.io/WY/" target="_blank">
+         <div id="modal-04" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/WY.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>网易邮箱6.0</h4>
+			      <p>临摹京东PC端首页，利用div+css进行布局以及利用jquery对页面的JS效果进行添加.同时主要运用css3的一些属性实现页面动画效果</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+		      </div>
+
+            <div class="link-box">
+               Details
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-04 End -->
+         </a>
+
+
+<a href="https://firegxf.github.io/BWL/" target="_blank">
+    <div id="modal-05" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/modals/BWL.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>备忘录</h4>
+               <p>基于H5和本地存储. localStorage 是 HTML5 本地存储的 API，使用键值对的方式进行存取数据，存取的数据只能是字符串。</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+            </div>
+
+            <div class="link-box">
+               Details
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div><!-- modal-05 End -->
+</a>
+        
+
+
+
+<a href="https://firegxf.github.io/apple/" target="_blank">
+   
+         <div id="modal-06" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/modals/APPLE.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>苹果首页</h4>
+               <p>利用css3的一些特殊属性，例如@media等，实现了同一套苹果页面在不同的设备上都能够适应不同的屏幕尺寸.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
+            </div>
+
+            <div class="link-box">
+               Details
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div><!-- modal-06 End -->
+</a>
+
+
+
+<a href="https://firegxf.github.io/HB/" target="_blank">
+   <div id="modal-07" class="popup-modal mfp-hide">
+
+            <img class="scale-with-grid" src="images/portfolio/modals/HB.jpg" alt="" />
+
+            <div class="description-box">
+               <h4>画板</h4>
+               <p>主要运用了H5当中的canvas  利用canvas可以实现在画布上绘制任意的图形，同时利用js操作里面的元素实现画板的一些基本功能.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
+            </div>
+
+            <div class="link-box">
+               Details
+               <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+         </div><!-- modal-07 End -->
+</a>
+         
+
+
+<a href="https://firegxf.github.io/icould/" target="_blank">
+         <div id="modal-08" class="popup-modal mfp-hide">
+
+		      <img class="scale-with-grid" src="images/portfolio/modals/Angular.jpg" alt="" />
+
+		      <div class="description-box">
+			      <h4>Retrocam</h4>
+			      <p>利用Angular JS 实现双向数据绑定，同时利用JS进行控制实现.</p>
+               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
+		      </div>
+
+            <div class="link-box">
+               Details
+		         <a class="popup-modal-dismiss">Close</a>
+            </div>
+
+	      </div><!-- modal-01 End -->
+
+
+      </div> <!-- row End -->
+</a>
+   </section> <!-- Portfolio Section End-->
+
+
+   <!-- Call-To-Action Section
+   ================================================== -->
+   <section id="call-to-action">
+   
+      <div class="row">
+   
+         <div class="two columns header-col">
+   
+            <h1><span>Get Hosting.</span></h1>
+   
+         </div>
+   
+         <div class="seven columns">
+   
+            <h2><a rel="nofollow" href="http://www.a2hosting.com/?utm___source=styleshoutdemo&utm_medium=__cpm&utm_content=&utm_campaign=">Host This Template on A2 Hosting.</a></h2>
+            <p>300% Faster Hosting on Their SwiftServer SSDs.</p>
+   
+         </div>
+   
+         <div class="three columns action">
+   
+            <a rel="nofollow" href="http://www.a2hosting.com/?utm___source=styleshoutdemo&utm_medium=__cpm&utm_content=&utm_campaign=" class="button">Sign Up Now</a>
+   
+         </div>
+   
+      </div>
+   
+   </section>
+   <!-- Call-To-Action Section End-->
+<!-- <div class="outs">
+      <div class="inners">
+         <div class="boxs"></div>
+         <div class="boxs"></div>
+         <div class="boxs"></div>
+         <div class="boxs"></div>
+         <div class="boxs"></div>
+         <div class="boxs"></div>
+      </div>
+   </div> -->
+
+   <!-- Testimonials Section
+   ================================================== -->
+   <section id="testimonials">
+
+      <div class="text-container">
+
+         <div class="row">
+
+            <div class="two columns header-col">
+
+               <h1><span>Client Testimonials</span></h1>
+
+            </div>
+
+            <div class="ten columns flex-container">
+
+               <div class="flexslider">
+
+                  <ul class="slides">
+
+                     <li>
+                        <blockquote>
+                           <div style="border:2px solid #FFC500;padding:10px">
+                           <p>About 前端 </p>
+                           <p>       生活在互联网高速发展的时代，我们每个人都值得庆幸。技术的更新和发展总是离不开用户的需求，而我们恰好是离用户最近的那一群人。作为前端工程师最核心的价值或者说是责任，就是将大伙的所有心血和努力最终要完美地呈现给用户。
+                                
+                           </p>
+                        </div>
+                           <cite></cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                     <li>
+                        <blockquote>
+                             <div style="border:2px solid #FFC500;padding:10px">
+                           <p>About Me </p>
+                           <p>       兴趣是最好的老师，要做一名好的前端工程师，对前端一定要有着浓厚的兴趣。
+                            在我看来，前端不仅仅是写代码，更是美好事物的实践者，好的界面会让人眼前一亮,再配上js搭配的效果实现，让用户在使用的时候有着完美的体验。
+                        
+                           </p>
+                             </div>
+                           <cite></cite>
+                        </blockquote>
+                     </li> <!-- slide ends -->
+
+                  </ul>
+
+               </div> <!-- div.flexslider ends -->
+
+            </div> <!-- div.flex-container ends -->
+
+         </div> <!-- row ends -->
+
+       </div>  <!-- text-container ends -->
+
+   </section> <!-- Testimonials Section End-->
+
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact">
+
+         <div class="row section-head">
+
+            <div class="two columns header-col">
+
+               <h1><span>Get In Touch.</span></h1>
+
+            </div>
+
+            <div class="ten columns">
+
+                  <p class="lead">
+                  </p>
+
+            </div>
+
+         </div>
+
+         <div class="row">
+
+            <div class="eight columns">
+
+               <!-- form -->
+               <form action="" method="post" id="contactForm" name="contactForm">
+					<fieldset>
+
+                  <div>
+						   <label for="contactName">Name <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactName" name="contactName">
+                  </div>
+
+                  <div>
+						   <label for="contactEmail">Email <span class="required">*</span></label>
+						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+                  </div>
+
+                  <div>
+						   <label for="contactSubject">Subject</label>
+						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
+                  </div>
+
+                  <div>
+                     <label for="contactMessage">Message <span class="required">*</span></label>
+                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
+                  </div>
+
+                  <div>
+                     <button class="submit">Submit</button>
+                     <span id="image-loader">
+                        <img alt="" src="images/loader.gif">
+                     </span>
+                  </div>
+
+					</fieldset>
+				   </form> <!-- Form End -->
+
+               <!-- contact-warning -->
+               <div id="message-warning"> Error boy</div>
+               <!-- contact-success -->
+				   <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
+
+
+            <aside class="four columns footer-widgets">
+
+               <div class="widget widget_contact">
+
+					 <!--   <h4>Address and Phone</h4>
+                <p class="address">
+                                     Jonathan Doe<br>
+                                     1600 Amphitheatre Parkway <br>
+                                     Mountain View, CA 94043 US<br>
+                                     <span>(123) 456-7890</span>
+                </p> -->
+
+				   </div>
+
+               <div class="widget widget_tweets">
+
+                  <h4 class="widget-title"><!-- Latest Tweets --></h4>
+
+                  <ul id="twitter">
+                     <li>
+                        <span>
+                       <!--  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+                       Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum -->
+                        <a href="#"><!-- http://t.co/CGIrdxIlI3 --></a>
+                        </span>
+                        <b><a href="#"><!-- 2 Days Ago --></a></b>
+                     </li>
+                     <li>
+                        <span>
+                      <!--   Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                      eaque ipsa quae ab illo inventore veritatis et quasi -->
+                        <a href="#"><!-- http://t.co/CGIrdxIlI3 --></a>
+                        </span>
+                        <b><a href="#"><!-- 3 Days Ago --></a></b>
+                     </li>
+                  </ul>
+
+		         </div>
+
+            </aside>
+
+      </div>
+
+   </section> <!-- Contact Section End-->
+
+
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">
+
+         <div class="twelve columns">
+
+            <ul class="social-links">
+               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+            </ul>
+
+            <ul class="copyright">
+               <li>&copy; 2014 CeeVee - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">郭晓峰的个人站</a></li>
+               <li>Design by <a title="Styleshout" href="#">Styleshout</a></li>
+               <li>Sponsored by <a rel="nofollow" href="#">A2Hosting</a></li>
+            </ul>
+
+         </div>
+
+         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+      </div>
+
+   </footer> <!-- Footer End-->
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="js/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+<script>
+   var box=document.querySelectorAll(".boxs");
+   var inner=document.querySelector(".inners");
+   var out=document.querySelector(".outs");
+   var len=box.length;
+   var w=box[0].offsetWidth;
+   var du=360/len;
+   var aa=w/(2*Math.tan(du/2*Math.PI/180))
+   for (var i = 0; i < box.length; i++) {
+      box[i].style.transform="rotateY("+i*du+"deg) translateZ("+aa+"px)";
+   };
+   var xx=0
+   setInterval(function(){
+      xx-=0.6
+      inner.style.transform="rotateY("+xx+"deg)";
+   },10)
+</script>
+</body>
+
+</html>
